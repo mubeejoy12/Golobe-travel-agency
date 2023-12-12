@@ -1,23 +1,22 @@
 import React from "react";
 import { Stack, Box } from "@mui/material";
-
-// const useStyles = makeStyles({
-//   root: {
-//     width: "1380px",
-//     height: "599px",
-//     border: "2px solid yellow",
-//   },
-// });
+import globeImage from "../assets/Rectangle.png";
 
 const containerStyle = {
   width: "1380px",
   height: "599px",
   border: "2px solid blue",
-  margin: "0 auto"
+  margin: "0 auto",
+  backgroundImage: `url(${globeImage})`,
+  backgroundImageRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  borderRadius: "24px"
+  
+
 };
 
 const FirstPage = () => {
-  //   const classes = useStyles()
   return <Stack sx={containerStyle}></Stack>;
 };
 
