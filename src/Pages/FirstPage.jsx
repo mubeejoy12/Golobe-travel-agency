@@ -26,7 +26,7 @@ const navBar = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
-  alightItems: "center",
+  alignItems: "center",
   gap: "10px",
 };
 const itemOne = {
