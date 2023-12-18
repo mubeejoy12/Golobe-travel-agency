@@ -5,6 +5,8 @@ import FlightIcon from "@mui/icons-material/Flight";
 import BedIcon from "@mui/icons-material/Bed";
 import Golobe from "../assets/golobeicon.png";
 import Icon from "../component/Icons/Icon";
+import plane from "../assets/secondplane.png";
+import Divider from "@mui/material/Divider";
 
 const containerStyle = {
   width: "1380px",
@@ -86,7 +88,7 @@ const FirstPage = () => {
                 gap: "5px",
               }}
             >
-               <Icon iconName="airplane"  />
+              <Icon iconName="airplane" />
               <Typography variant="h9" color="White">
                 find Flight
               </Typography>
@@ -100,7 +102,7 @@ const FirstPage = () => {
               }}
             >
               <BedIcon sx={secondIcon} />
-              <Typography variant="h8" color="White">
+              <Typography variant="h8" color="white">
                 find Stays
               </Typography>
             </Box>
@@ -149,8 +151,56 @@ const FirstPage = () => {
           backgroundColor: "white",
         }}
       >
-        <Stack>
-          <Icon iconName="airplane" />
+        <Stack
+          sx={{
+            border: "2px solid green",
+            marginTop: "15px",
+            display: "flex",
+            flexDirection: "row",
+            
+            // backgroundColor: "brown",
+          }}
+        >
+          <Stack
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              gap: "5px",
+            }}
+          >
+            <Icon iconName="secondp" />
+            <Typography variant="h9" color="black">
+              find Flight
+            </Typography>
+          </Stack>
+
+          <Stack
+            sx={{
+              borderLeft: "2px solid #D7E2EE",
+              height: "30px",
+              marginLeft: "20px",
+             display: "flex",
+             flexDirection: "row",
+             alignItems: "center",
+             
+            }}
+          >
+            <Stack
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                marginLeft: "10px",
+                gap: "10px"
+              }}
+            >
+              <Icon iconName="bed" />
+              <Typography variant="h8" color="black">
+                find Stays
+              </Typography>
+            </Stack>
+          </Stack>
         </Stack>
         <Stack></Stack>
         <Stack></Stack>

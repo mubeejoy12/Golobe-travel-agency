@@ -5,7 +5,8 @@ import { capitalize } from "@mui/material";
 
 const Icon = ({ iconName = "" }) => {
   const IcomComponent = Svgs[capitalize(iconName)];
-  return <IcomComponent />;
+  
+  return <IcomComponent  />;
 };
 
 export default Icon;
