@@ -67,6 +67,7 @@ const middleTypo = {
 const FirstPage = () => {
   return (
     <>
+    <Stack sx={{backgroundColor: "#F8FAFB"}}>
       <Stack sx={containerStyle}>
         {/* <Stack style={gradientOverlayStyle}></Stack> */}
         {/* navBar */}
@@ -273,6 +274,7 @@ const FirstPage = () => {
       </Stack>
 
       <FlightPlaces />
+      </Stack>
     </>
   );
 };
