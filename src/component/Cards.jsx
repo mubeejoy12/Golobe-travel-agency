@@ -2,48 +2,53 @@ import { Card, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import instabulimg from "../assets/instabulimg.png";
 
-const cardImages = {
-  width: "90px",
-  height: "90px",
-  //   border: "2px solid brown",
-  backgroundImage: `url(${instabulimg})`,
-  backgroundImageRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-};
+const Cards = ({ imageSrc, title, subtitle }) => {
+  const cardImages = {
+    width: "90px",
+    height: "90px",
+    backgroundImage: `url(${imageSrc})`,
+    backgroundImageRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  };
 
-const Cards = () => {
   return (
-    <Card>
-      <Container maxWidth="xs">
-        <Stack
-          sx={{
-            display: "flex",
-            alignItems: "center",
-          }}
-          direction={"row"}
-          spacing={1}
-        >
-          <Stack sx={cardImages}></Stack>
-          <Stack
-            sx={{
-              width: "251.33px",
-              height: "45px",
-            }}
+    <Card
+      sx={{
+        width: "389.33px",
+        height: "122px",
+        display: "flex",
+        alignItems: "center",
+        padding: "16px",
+        borderRadius: "16pxx",
+      }}
+    >
+      <Stack
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+        direction={"row"}
+        spacing={1}
+      >
+        <Stack sx={cardImages}></Stack>
+        <Stack>
+          <Typography
+            variant="subtitle1"
+            color="initial"
+            sx={{ fontWeight: "100" }}
           >
-            <Typography
-              variant="subtitle1"
-              color="initial"
-              sx={{ fontWeight: "100" }}
-            >
-              instabul, turkey
-            </Typography>
-            <Typography variant="caption" color="initial">
-              Flight . Hotel . Resorts
-            </Typography>
-          </Stack>
+            {title}
+          </Typography>
+          <Typography
+            variant="caption"
+            color="initial"
+            sx={{ lineHeight: "2" }}
+          >
+            {subtitle}
+          </Typography>
         </Stack>
-      </Container>
+      </Stack>
     </Card>
   );
 };
