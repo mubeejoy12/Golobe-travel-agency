@@ -1,12 +1,12 @@
 import React from "react";
-import { Stack, Box, Typography, Button } from "@mui/material";
+import { Stack, Box, Typography, Button, TextField } from "@mui/material";
 import globeImage from "../assets/Rectangle.png";
-import FlightIcon from "@mui/icons-material/Flight";
 import BedIcon from "@mui/icons-material/Bed";
 import Golobe from "../assets/golobeicon.png";
 import Icon from "../component/Icons/Icon";
-import plane from "../assets/secondplane.png";
-import Divider from "@mui/material/Divider";
+import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
+import SendIcon from "@mui/icons-material/Send";
+import FlightPlaces from "./FlightPlaces";
 
 const containerStyle = {
   width: "1380px",
@@ -55,15 +55,7 @@ const imageStyle = {
   width: "110.36px",
   height: "36px",
 };
-// const gradientOverlayStyle = {
-//   position: "absolute",
-//   top: 0,
-//   left: 0,
-//   width: "100%",
-//   height: "100%",
-//   background: "linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%)",
-//   borderRadius: "24px",
-// };
+
 const middleTypo = {
   marginTop: "60px",
   display: "flex",
@@ -140,24 +132,28 @@ const FirstPage = () => {
         </Stack>
       </Stack>
       <Stack
+        direction={"column"}
+        spacing={4}
         sx={{
-          border: "2px solid yellow",
-          height: "250px",
+          // border: "2px solid yellow",
+          height: "240px",
           borderRadius: "16px",
           width: "1232px",
           position: "relative",
           top: "-100px",
           margin: "0 auto",
           backgroundColor: "white",
+          padding: "40px 0 0 20px",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
         }}
       >
         <Stack
           sx={{
-            border: "2px solid green",
-            marginTop: "15px",
+            // border: "2px solid green",
+            // marginTop: "15px",
             display: "flex",
             flexDirection: "row",
-            
+
             // backgroundColor: "brown",
           }}
         >
@@ -170,8 +166,8 @@ const FirstPage = () => {
             }}
           >
             <Icon iconName="secondp" />
-            <Typography variant="h9" color="black">
-              find Flight
+            <Typography variant="h10" color="black">
+              Flights
             </Typography>
           </Stack>
 
@@ -180,10 +176,9 @@ const FirstPage = () => {
               borderLeft: "2px solid #D7E2EE",
               height: "30px",
               marginLeft: "20px",
-             display: "flex",
-             flexDirection: "row",
-             alignItems: "center",
-             
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
             }}
           >
             <Stack
@@ -192,12 +187,12 @@ const FirstPage = () => {
                 flexDirection: "row",
                 alignItems: "center",
                 marginLeft: "10px",
-                gap: "10px"
+                gap: "5px",
               }}
             >
               <Icon iconName="bed" />
-              <Typography variant="h8" color="black">
-                find Stays
+              <Typography variant="h10" color="black">
+                Stays
               </Typography>
             </Stack>
           </Stack>
@@ -276,6 +271,8 @@ const FirstPage = () => {
           </Button>
         </Stack>
       </Stack>
+
+      <FlightPlaces />
     </>
   );
 };
