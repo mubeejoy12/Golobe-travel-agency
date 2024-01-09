@@ -15,10 +15,8 @@ const FlightPlaces = () => {
       <Stack
         sx={{
           height: "70px",
-          //   border: "2px solid purple",
           display: "flex",
           justifyContent: "space-between",
-          //   alignItems: "center",
         }}
         direction={"row"}
       >
