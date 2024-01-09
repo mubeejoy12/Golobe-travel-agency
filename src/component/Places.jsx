@@ -14,30 +14,69 @@ import instabulimg9 from "../assets/Dubai.png";
 const Places = () => {
   return (
     <Box sx={{ border: "2px solid green" }}>
-      <Grid container spacing={2}>
-        {" "}
-        {/* Adjust spacing as needed */}
+      <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Paper>
-        <Cards/>
-          </Paper>
-          {/* Content for the first grid item */}
+          <Cards
+            imageSrc={instabulimg1}
+            title="Istanbul, Turkey"
+            subtitle="Flights . Hotels . Resorts"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Paper>hjbhb</Paper>
+          <Cards
+            imageSrc={instabulimg2}
+            title="Sydney Australia"
+            subtitle="Flights . Hotels . Resorts"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Paper>hjbhb</Paper>
+          <Cards
+            imageSrc={instabulimg3}
+            title="Baku Azerbaijan"
+            subtitle="Flights . Hotels . Resorts"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Paper>hjbhb</Paper>
-          {/* Content for the first grid item */}
+          <Cards
+            imageSrc={instabulimg4}
+            title="Malè Maldives"
+            subtitle="Flights . Hotels . Resorts"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Paper>hjbhb</Paper>
+          <Cards
+            imageSrc={instabulimg5}
+            title="Paris, France"
+            subtitle="Flights . Hotels . Resorts"
+          />
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <Paper>hjbhb</Paper>
+          <Cards
+            imageSrc={instabulimg6}
+            title="New york, USA"
+            subtitle="Flights . Hotels . Resorts"
+          />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
+          <Cards
+            imageSrc={instabulimg7}
+            title="London, Uk"
+            subtitle="Flights . Hotels . Resorts"
+          />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
+          <Cards
+            imageSrc={instabulimg8}
+            title="Tokyo, Japan"
+            subtitle="Flights . Hotels . Resorts"
+          />
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
+          <Cards
+            imageSrc={instabulimg9}
+            title="Dubai, UEA"
+            subtitle="Flights . Hotels . Resorts"
+          />
         </Grid>
       </Grid>
     </Box>
