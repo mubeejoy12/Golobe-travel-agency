@@ -8,7 +8,9 @@ const Places = () => {
         {" "}
         {/* Adjust spacing as needed */}
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          ghjfvhvhj
+          <Paper>
+        <Cards/>
+          </Paper>
           {/* Content for the first grid item */}
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
