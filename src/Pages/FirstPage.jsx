@@ -202,8 +202,79 @@ const FirstPage = () => {
             </Stack>
           </Stack>
         </Stack>
-        <Stack></Stack>
-        <Stack></Stack>
+        <Stack>
+          <Box
+            component={"form"}
+            sx={{
+              height: "50px",
+              display: "flex",
+              flexDirection: "row",
+              gap: "45px",
+            }}
+          >
+            <TextField
+              id="outlined-basic"
+              label="From-To"
+              variant="outlined"
+              size="small"
+              sx={{ width: "320px" }}
+              InputProps={{
+                endAdornment: <SwapHorizIcon className="custom-icon" />,
+              }}
+            />
+
+            <TextField
+              id="outlined-basic"
+              label="Trip"
+              variant="outlined"
+              size="small"
+              sx={{ width: "100px" }}
+              // InputProps={{
+              //   endAdornment: <SwapHorizIcon className="custom-icon" />,
+              // }}
+            />
+
+            <TextField
+              id="outlined-basic"
+              label="Depart-Return"
+              variant="outlined"
+              size="small"
+              sx={{ width: "320px" }}
+              // InputProps={{
+              //   endAdornment: <SwapHorizIcon className="custom-icon" />,
+              // }}
+            />
+
+            <TextField
+              id="outlined-basic"
+              label="Passanger-Class"
+              variant="outlined"
+              size="small"
+              sx={{ width: "320px" }}
+              // InputProps={{
+              //   endAdornment: <SwapHorizIcon className="custom-icon" />,
+              // }}
+            />
+          </Box>
+        </Stack>
+        <Stack
+          sx={{
+            // border: "2px solid orange",
+            height: "48px",
+            paddingRight: "10px",
+            justifyContent: "flex-end",
+          }}
+          direction={"row"}
+        >
+          <Button variant="text" sx={{ fontSize: "7px" }}>
+            + Add Promo Code
+          </Button>
+          <Button variant="contained" sx={{ fontSize: "8px" }}>
+            {" "}
+            <SendIcon sx={{ width: "12px", marginRight: "5px" }} />
+            Show flight
+          </Button>
+        </Stack>
       </Stack>
     </>
   );
