@@ -1,5 +1,6 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Paper } from "@mui/material";
 import React from "react";
+import Cards from "./Cards";
 
 const Places = () => {
   return (
@@ -14,20 +15,20 @@ const Places = () => {
           {/* Content for the first grid item */}
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          samf as
+          <Paper>hjbhb</Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          nsajn sd
+          <Paper>hjbhb</Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          ghjfvhvhj
+          <Paper>hjbhb</Paper>
           {/* Content for the first grid item */}
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          samf as
+          <Paper>hjbhb</Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          nsajn sd
+          <Paper>hjbhb</Paper>
         </Grid>
       </Grid>
     </Box>
