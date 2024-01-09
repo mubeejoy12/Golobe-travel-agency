@@ -3,3 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.custom-icon {
+  position: absolute;
+  right: 10px; /* Adjust the right value as needed */
+  top: 50%; /* Adjust the top value to vertically center the icon */
+  transform: translateY(-50%);
+}
