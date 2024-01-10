@@ -1,6 +1,5 @@
-import { Card, Container, Stack, Typography } from "@mui/material";
+import { Card, Stack, Typography } from "@mui/material";
 import React from "react";
-import instabulimg from "../assets/instabulimg.png";
 
 const Cards = ({ imageSrc, title, subtitle }) => {
   const cardImages = {
