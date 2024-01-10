@@ -67,119 +67,93 @@ const middleTypo = {
 const FirstPage = () => {
   return (
     <>
-    <Stack sx={{backgroundColor: "#F8FAFB"}}>
-      <Stack sx={containerStyle}>
-        {/* <Stack style={gradientOverlayStyle}></Stack> */}
-        {/* navBar */}
-        <Stack sx={navBar}>
-          <Stack sx={itemOne}>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "5px",
-              }}
-            >
-              <Icon iconName="airplane" />
-              <Typography variant="h9" color="White">
-                find Flight
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "5px",
-              }}
-            >
-              <BedIcon sx={secondIcon} />
-              <Typography variant="h8" color="white">
-                find Stays
-              </Typography>
-            </Box>
+      <Stack sx={{ backgroundColor: "#F8FAFB" }}>
+        <Stack sx={containerStyle}>
+          <Stack sx={navBar}>
+            <Stack sx={itemOne}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "5px",
+                }}
+              >
+                <Icon iconName="airplane" />
+                <Typography variant="h9" color="White">
+                  find Flight
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "5px",
+                }}
+              >
+                <BedIcon sx={secondIcon} />
+                <Typography variant="h8" color="white">
+                  find Stays
+                </Typography>
+              </Box>
+            </Stack>
+            <Stack sx={itemTwo}>
+              <img src={Golobe} alt="" style={imageStyle} />
+            </Stack>
+            <Stack sx={itemThree}>
+              <Button variant="text" sx={{ color: "white", fontSize: "12px" }}>
+                Login
+              </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  color: "black",
+                  backgroundColor: "white",
+                  fontSize: "10px",
+                }}
+              >
+                Sigh up
+              </Button>
+            </Stack>
           </Stack>
-          <Stack sx={itemTwo}>
-            <img src={Golobe} alt="" style={imageStyle} />
-          </Stack>
-          <Stack sx={itemThree}>
-            <Button variant="text" sx={{ color: "white", fontSize: "12px" }}>
-              Login
-            </Button>
-            <Button
-              variant="contained"
-              sx={{
-                color: "black",
-                backgroundColor: "white",
-                fontSize: "10px",
-              }}
-            >
-              Sigh up
-            </Button>
-          </Stack>
-        </Stack>
 
-        <Stack sx={middleTypo}>
-          <Typography variant="h3" color="white">
-            Helping Others
-          </Typography>
-          <Typography variant="h1" color="white">
-            LIVE & TRAVEL
-          </Typography>
-          <Typography variant="h6" color="white">
-            Special offer to suit your plan
-          </Typography>
+          <Stack sx={middleTypo}>
+            <Typography variant="h3" color="white">
+              Helping Others
+            </Typography>
+            <Typography variant="h1" color="white">
+              LIVE & TRAVEL
+            </Typography>
+            <Typography variant="h6" color="white">
+              Special offer to suit your plan
+            </Typography>
+          </Stack>
         </Stack>
-      </Stack>
-      <Stack
-        direction={"column"}
-        spacing={4}
-        sx={{
-          // border: "2px solid yellow",
-          height: "240px",
-          borderRadius: "16px",
-          width: "1232px",
-          position: "relative",
-          top: "-100px",
-          margin: "0 auto",
-          backgroundColor: "white",
-          padding: "40px 0 0 20px",
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-        }}
-      >
         <Stack
+          direction={"column"}
+          spacing={4}
           sx={{
-            // border: "2px solid green",
-            // marginTop: "15px",
-            display: "flex",
-            flexDirection: "row",
-
-            // backgroundColor: "brown",
+            // border: "2px solid yellow",
+            height: "240px",
+            borderRadius: "16px",
+            width: "1232px",
+            position: "relative",
+            top: "-100px",
+            margin: "0 auto",
+            backgroundColor: "white",
+            padding: "40px 0 0 20px",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
           }}
         >
           <Stack
             sx={{
+              // border: "2px solid green",
+              // marginTop: "15px",
               display: "flex",
               flexDirection: "row",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <Icon iconName="secondp" />
-            <Typography variant="h10" color="black">
-              Flights
-            </Typography>
-          </Stack>
 
-          <Stack
-            sx={{
-              borderLeft: "2px solid #D7E2EE",
-              height: "30px",
-              marginLeft: "20px",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
+              // backgroundColor: "brown",
             }}
           >
             <Stack
@@ -187,93 +161,117 @@ const FirstPage = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                marginLeft: "10px",
                 gap: "5px",
               }}
             >
-              <Icon iconName="bed" />
+              <Icon iconName="secondp" />
               <Typography variant="h10" color="black">
-                Stays
+                Flights
               </Typography>
             </Stack>
+
+            <Stack
+              sx={{
+                borderLeft: "2px solid #D7E2EE",
+                height: "30px",
+                marginLeft: "20px",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <Stack
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  marginLeft: "10px",
+                  gap: "5px",
+                }}
+              >
+                <Icon iconName="bed" />
+                <Typography variant="h10" color="black">
+                  Stays
+                </Typography>
+              </Stack>
+            </Stack>
+          </Stack>
+          <Stack>
+            <Box
+              component={"form"}
+              sx={{
+                height: "50px",
+                display: "flex",
+                flexDirection: "row",
+                gap: "45px",
+              }}
+            >
+              <TextField
+                id="outlined-basic"
+                label="From-To"
+                variant="outlined"
+                size="small"
+                sx={{ width: "320px" }}
+                InputProps={{
+                  endAdornment: <SwapHorizIcon className="custom-icon" />,
+                }}
+              />
+
+              <TextField
+                id="outlined-basic"
+                label="Trip"
+                variant="outlined"
+                size="small"
+                sx={{ width: "100px" }}
+                // InputProps={{
+                //   endAdornment: <SwapHorizIcon className="custom-icon" />,
+                // }}
+              />
+
+              <TextField
+                id="outlined-basic"
+                label="Depart-Return"
+                variant="outlined"
+                size="small"
+                sx={{ width: "320px" }}
+                // InputProps={{
+                //   endAdornment: <SwapHorizIcon className="custom-icon" />,
+                // }}
+              />
+
+              <TextField
+                id="outlined-basic"
+                label="Passanger-Class"
+                variant="outlined"
+                size="small"
+                sx={{ width: "320px" }}
+                // InputProps={{
+                //   endAdornment: <SwapHorizIcon className="custom-icon" />,
+                // }}
+              />
+            </Box>
+          </Stack>
+          <Stack
+            sx={{
+              // border: "2px solid orange",
+              height: "48px",
+              paddingRight: "10px",
+              justifyContent: "flex-end",
+            }}
+            direction={"row"}
+          >
+            <Button variant="text" sx={{ fontSize: "7px" }}>
+              + Add Promo Code
+            </Button>
+            <Button variant="contained" sx={{ fontSize: "8px" }}>
+              {" "}
+              <SendIcon sx={{ width: "12px", marginRight: "5px" }} />
+              Show flight
+            </Button>
           </Stack>
         </Stack>
-        <Stack>
-          <Box
-            component={"form"}
-            sx={{
-              height: "50px",
-              display: "flex",
-              flexDirection: "row",
-              gap: "45px",
-            }}
-          >
-            <TextField
-              id="outlined-basic"
-              label="From-To"
-              variant="outlined"
-              size="small"
-              sx={{ width: "320px" }}
-              InputProps={{
-                endAdornment: <SwapHorizIcon className="custom-icon" />,
-              }}
-            />
 
-            <TextField
-              id="outlined-basic"
-              label="Trip"
-              variant="outlined"
-              size="small"
-              sx={{ width: "100px" }}
-              // InputProps={{
-              //   endAdornment: <SwapHorizIcon className="custom-icon" />,
-              // }}
-            />
-
-            <TextField
-              id="outlined-basic"
-              label="Depart-Return"
-              variant="outlined"
-              size="small"
-              sx={{ width: "320px" }}
-              // InputProps={{
-              //   endAdornment: <SwapHorizIcon className="custom-icon" />,
-              // }}
-            />
-
-            <TextField
-              id="outlined-basic"
-              label="Passanger-Class"
-              variant="outlined"
-              size="small"
-              sx={{ width: "320px" }}
-              // InputProps={{
-              //   endAdornment: <SwapHorizIcon className="custom-icon" />,
-              // }}
-            />
-          </Box>
-        </Stack>
-        <Stack
-          sx={{
-            // border: "2px solid orange",
-            height: "48px",
-            paddingRight: "10px",
-            justifyContent: "flex-end",
-          }}
-          direction={"row"}
-        >
-          <Button variant="text" sx={{ fontSize: "7px" }}>
-            + Add Promo Code
-          </Button>
-          <Button variant="contained" sx={{ fontSize: "8px" }}>
-            {" "}
-            <SendIcon sx={{ width: "12px", marginRight: "5px" }} />
-            Show flight
-          </Button>
-        </Stack>
-      </Stack>
-
-      <FlightPlaces />
+        <FlightPlaces />
       </Stack>
     </>
   );

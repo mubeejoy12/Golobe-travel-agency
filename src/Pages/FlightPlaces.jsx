@@ -1,13 +1,13 @@
 import { Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import Places from "../component/Places";
+import FlightHotel from "../component/FlightHotel";
 
 const FlightPlaces = () => {
   return (
     <Stack
       sx={{
         width: "1232px",
-        border: "2px solid yellow",
         margin: "0 auto",
         height: "549px",
       }}
@@ -55,6 +55,8 @@ const FlightPlaces = () => {
       </Stack>
 
       <Places />
+
+      <FlightHotel />
     </Stack>
   );
 };
