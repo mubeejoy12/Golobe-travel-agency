@@ -13,7 +13,7 @@ import instabulimg9 from "../assets/Dubai.png";
 
 const Places = () => {
   return (
-    <Box sx={{ border: "2px solid green" }}>
+    <Box sx={{marginTop: "30px" }}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
           <Cards
