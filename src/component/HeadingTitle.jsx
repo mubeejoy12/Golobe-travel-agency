@@ -1,3 +1,7 @@
+import { Stack, Typography, Button } from "@mui/material";
+import React from "react";
+
+const HeadingTitle = ({ title, subtitle, buttonText }) => {
   return (
     <Stack>
       <Stack
