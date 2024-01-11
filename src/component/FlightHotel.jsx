@@ -8,26 +8,26 @@ const FlightHotel = () => {
   const BookFlight = {
     width: "604px",
     height: "559px",
-    border: " 2px solid purple",
     backgroundImage: `url(${flight})`,
     backgroundImageRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
+    borderRadius: "20px",
   };
 
   const BookHotel = {
     width: "604px",
     height: "559px",
-    border: " 2px solid purple",
     backgroundImage: `url(${hotel})`,
     backgroundImageRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
+    borderRadius: "20px",
   };
   return (
     <Stack
-      sx={{ width: "1232px", height: "559px", border: "2px solid purple" }}
-      my={2}
+      sx={{ width: "1232px", height: "559px" }}
+      my={7}
       direction={"row"}
       spacing={2}
     >
@@ -48,9 +48,16 @@ const FlightHotel = () => {
           <Button
             variant="contained"
             color="primary"
-            sx={{ mt: 2, mb: 2, width: "144px", height: "48px" }}
+            sx={{
+              mt: 2,
+              mb: 2,
+              width: "144px",
+              height: "48px",
+              fontSize: "10px",
+            }}
+            small="true"
           >
-            <SendIcon />
+            <SendIcon sx={{ width: "15px", mr: 1 }} />
             Show Flights
           </Button>
         </Stack>
@@ -77,10 +84,11 @@ const FlightHotel = () => {
               mb: 2,
               width: "144px",
               height: "48px",
+              fontSize: "10px",
             }}
             small="true"
           >
-            <SendIcon sx={{ width: "15px" }} />
+            <SendIcon sx={{ width: "15px", mr: 1 }} />
             Show Hotels
           </Button>
         </Stack>
