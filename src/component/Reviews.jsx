@@ -60,10 +60,32 @@ const Reviews = () => {
         buttonText={"See All"}
       />
 
-      <Stack>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-          <ReviewCrad/>
+      <Stack
+        direction="row"
+        spacing={8}
+        sx={{
+          width: "100%",
+          overflowX: "auto",
+          border: "2px solid yellow",
+          "&::-webkit-scrollbar": {
+            height: "8px",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "#888",
+            borderRadius: "4px",
+          },
+        }}
+      >
+        {reviewsData.map((review, index) => {
+          <ReviewCrad
+          key={index}
+          reviewImage={review.reviewImage}
+          heading={review.heading}
+          subtitle={review.subtitle}
+          name={review.name}
+          location={review.location}
+          />;
+        })}
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
             vghgvg
