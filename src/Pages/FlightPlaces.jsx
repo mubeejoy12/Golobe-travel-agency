@@ -4,6 +4,7 @@ import Places from "../component/Places";
 import FlightHotel from "../component/FlightHotel";
 import HeadingTitle from "../component/HeadingTitle";
 import Reviews from "../component/Reviews";
+import Footer from "../component/Footer";
 
 const FlightPlaces = () => {
   return (
@@ -12,6 +13,7 @@ const FlightPlaces = () => {
         width: "1232px",
         margin: "0 auto",
         height: "549px",
+        
       }}
     >
       <HeadingTitle
@@ -24,6 +26,8 @@ const FlightPlaces = () => {
       <Places />
       <FlightHotel />
       <Reviews />
+
+      <Footer/>
     </Stack>
   );
 };
