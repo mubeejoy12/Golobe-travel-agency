@@ -52,7 +52,7 @@ const Reviews = () => {
   ];
   return (
     <Stack
-      sx={{ width: "1396px", height: "722px", border: "2px solid yellow" }}
+      sx={{ width: "1396px", height: "800px", border: "2px solid yellow" }}
     >
       <HeadingTitle
         title={"Reviews"}
@@ -86,14 +86,104 @@ const Reviews = () => {
           location={review.location}
           />;
         })}
+        {/* <ReviewCrad
+          reviewImage={cloudOne}
+          heading="“A real sense of community, nurtured”"
+          subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+          name="Olga"
+          location="Weave Studios – Kai Tak"
+        /> */}
+
+        {/* <ReviewCrad
+          reviewImage={cloudOne}
+          heading="“A real sense of community, nurtured”"
+          subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+          name="Olga"
+          location="Weave Studios – Kai Tak"
+        /> */}
+        {/* 
+        <ReviewCrad
+          reviewImage={cloudOne}
+          heading="“A real sense of community, nurtured”"
+          subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+          name="Olga"
+          location="Weave Studios – Kai Tak"
+        />
+        <ReviewCrad
+          reviewImage={cloudOne}
+          heading="“A real sense of community, nurtured”"
+          subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+          name="Olga"
+          location="Weave Studios – Kai Tak"
+        />
+
+        <ReviewCrad
+          reviewImage={cloudOne}
+          heading="“A real sense of community, nurtured”"
+          subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+          name="Olga"
+          location="Weave Studios – Kai Tak"
+        /> */}
+
+        {/* <Grid container spacing={3}>
+          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+            <ReviewCrad
+              reviewImage={cloudOne}
+              heading="“A real sense of community, nurtured”"
+              subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+              name="Olga"
+              location="Weave Studios – Kai Tak"
+            />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-            vghgvg
+          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+          <ReviewCrad
+              reviewImage={cloudOne}
+              heading="“A real sense of community, nurtured”"
+              subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+              name="Olga"
+              location="Weave Studios – Kai Tak"
+            />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
-            vgvg
+          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+          <ReviewCrad
+              reviewImage={cloudOne}
+              heading="“A real sense of community, nurtured”"
+              subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+              name="Olga"
+              location="Weave Studios – Kai Tak"
+            />
           </Grid>
-        </Grid>
+
+          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+          <ReviewCrad
+              reviewImage={cloudOne}
+              heading="“A real sense of community, nurtured”"
+              subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+              name="Olga"
+              location="Weave Studios – Kai Tak"
+            />
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+          <ReviewCrad
+              reviewImage={cloudOne}
+              heading="“A real sense of community, nurtured”"
+              subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+              name="Olga"
+              location="Weave Studios – Kai Tak"
+            />
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
+          <ReviewCrad
+              reviewImage={cloudOne}
+              heading="“A real sense of community, nurtured”"
+              subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
+              name="Olga"
+              location="Weave Studios – Kai Tak"
+            />
+          </Grid>
+        </Grid> */}
       </Stack>
     </Stack>
   );
