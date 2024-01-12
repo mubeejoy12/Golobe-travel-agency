@@ -2,19 +2,32 @@ import { Button, Card, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import StarIcon from "@mui/icons-material/Star";
 import GoogleIcon from "@mui/icons-material/Google";
-const ReviewCrad = ({ reviewImage }) => {
+import cloudOne from "../assets/cloudOne.png";
+
+const ReviewCrad = ({ reviewImage, heading, subtile, name, location }) => {
   const ReviewImage = {
-    width: "377px",
+    width: "320px",
     height: "200px",
     backgroundImage: `url(${reviewImage})`,
     backgroundImageRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
+    borderRadius: "8px",
   };
   return (
-    <Stack>
+    <Stack
+
+    
+  >
       <Card
-        sx={{ width: "380px", height: "584px", border: "2px solid orange" }}
+        sx={{
+          width: "380px",
+          height: "590px",
+          border: "2px solid orange",
+          boxShadow: "30px 30px #8DD3BB ",
+          mb: 4,
+          borderRadius: "15px",
+        }}
       >
         <Stack sx={{}}>
           <Container>
@@ -24,7 +37,7 @@ const ReviewCrad = ({ reviewImage }) => {
               my={2}
               sx={{ fontSize: "22px", lineHeight: "30.31px" }}
             >
-              “A real sense of community, nurtured”
+            {heading}
             </Typography>
 
             <Stack>
@@ -33,9 +46,7 @@ const ReviewCrad = ({ reviewImage }) => {
                 color="black"
                 sx={{ textAlign: "justify" }}
               >
-                Really appreciate the help and support from the staff during
-                these tough times. Shoutout to Katie for helping me always, even
-                when I was out of the country. And always available when needed.
+                {subtile}
               </Typography>
 
               <Stack
@@ -50,7 +61,7 @@ const ReviewCrad = ({ reviewImage }) => {
               </Stack>
             </Stack>
 
-            <Stack direction="row" my={3}>
+            <Stack direction="row" my={1}>
               <StarIcon sx={{ color: "#FFC107", width: "22.5px" }} />
               <StarIcon sx={{ color: "#FFC107", width: "22.5px" }} />
               <StarIcon sx={{ color: "#FFC107", width: "22.5px" }} />
@@ -63,14 +74,14 @@ const ReviewCrad = ({ reviewImage }) => {
                 color="initial"
                 sx={{ fontSize: "14px", fontWeight: "bold" }}
               >
-                Olga
+               {name}
               </Typography>
               <Typography
                 variant="subtitle2"
                 color="initial"
                 sx={{ fontSize: "14px", fontWeight: "light" }}
               >
-                Weave Studios – Kai Tak
+               { location}
               </Typography>
             </Stack>
 
