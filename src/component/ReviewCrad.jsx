@@ -15,15 +15,12 @@ const ReviewCrad = ({ reviewImage, heading, subtile, name, location }) => {
     borderRadius: "8px",
   };
   return (
-    <Stack
-
-    
-  >
+    <Stack>
       <Card
         sx={{
           width: "380px",
           height: "590px",
-          border: "2px solid orange",
+            border: "2px solid orange",
           boxShadow: "30px 30px #8DD3BB ",
           mb: 4,
           borderRadius: "15px",
@@ -37,7 +34,7 @@ const ReviewCrad = ({ reviewImage, heading, subtile, name, location }) => {
               my={2}
               sx={{ fontSize: "22px", lineHeight: "30.31px" }}
             >
-            {heading}
+              {heading}
             </Typography>
 
             <Stack>
@@ -74,14 +71,14 @@ const ReviewCrad = ({ reviewImage, heading, subtile, name, location }) => {
                 color="initial"
                 sx={{ fontSize: "14px", fontWeight: "bold" }}
               >
-               {name}
+                {name}
               </Typography>
               <Typography
                 variant="subtitle2"
                 color="initial"
                 sx={{ fontSize: "14px", fontWeight: "light" }}
               >
-               { location}
+                {location}
               </Typography>
             </Stack>
 
