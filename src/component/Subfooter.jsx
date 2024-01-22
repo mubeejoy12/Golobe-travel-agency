@@ -1,21 +1,32 @@
 import { Container, Stack, Typography, TextField, Button } from "@mui/material";
 import React from "react";
-import mailBox1 from  "../assets/mailBox.png"
+import mailBox1 from "../assets/mailBox.png";
 const Subfooter = () => {
-    const mailBox = {
-        width: "400px",
-        height: "305",
-        backgroundImage: `url(${mailBox1})`,
-        backgroundImageRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-    }
+  const mailBox = {
+    width: "400px",
+    height: "305px",
+    backgroundImage: `url(${mailBox1})`,
+    backgroundImageRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  };
   return (
     <Stack
-      sx={{ width: "1232px", height: "305px", border: "2px solid green", justifyContent: "space-between", padding: "0 15px 0 15px" }}
-      my={2} direction={"row"}
+      sx={{
+        width: "1232px",
+        height: "305px",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "0 30px 0 30px",
+        backgroundColor: "#CDEAE1",
+        position: "relative",
+        top: 140,
+        borderRadius: "20px",
+      }}
+      my={-2}
+      direction={"row"}
     >
-      <Stack>
+      <Stack spacing={1}>
         <Typography
           variant="h3"
           color="initial"
@@ -36,8 +47,6 @@ const Subfooter = () => {
             sx={{ width: "473px", height: "56px", borderRadius: 4 }}
             id=""
             label="Your email address"
-            //   value={}
-            //   onChange={}
           />
 
           <Button
@@ -54,9 +63,7 @@ const Subfooter = () => {
         </Stack>
       </Stack>
 
-      <Stack sx={mailBox}>
-
-      </Stack>
+      <Stack sx={mailBox}></Stack>
     </Stack>
   );
 };
