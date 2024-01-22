@@ -52,7 +52,7 @@ const Reviews = () => {
   ];
   return (
     <Stack
-      sx={{ width: "1396px", height: "800px", border: "2px solid yellow" }}
+      sx={{ width: "1230px", height: "800px",  }}
     >
       <HeadingTitle
         title={"Reviews"}
@@ -66,7 +66,6 @@ const Reviews = () => {
         sx={{
           width: "100%",
           overflowX: "auto",
-          border: "2px solid yellow",
           "&::-webkit-scrollbar": {
             height: "8px",
           },
@@ -74,9 +73,10 @@ const Reviews = () => {
             backgroundColor: "#888",
             borderRadius: "4px",
           },
+          marginTop: "40px",
         }}
       >
-        {reviewsData.map((review, index) => {
+        {/* {reviewsData.map((review, index) => {
           <ReviewCrad
           key={index}
           reviewImage={review.reviewImage}
@@ -85,23 +85,23 @@ const Reviews = () => {
           name={review.name}
           location={review.location}
           />;
-        })}
-        {/* <ReviewCrad
+        })} */}
+        <ReviewCrad
           reviewImage={cloudOne}
           heading="“A real sense of community, nurtured”"
           subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
           name="Olga"
           location="Weave Studios – Kai Tak"
-        /> */}
+        />
 
-        {/* <ReviewCrad
+        <ReviewCrad
           reviewImage={cloudOne}
           heading="“A real sense of community, nurtured”"
           subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
           name="Olga"
           location="Weave Studios – Kai Tak"
-        /> */}
-        {/* 
+        />
+
         <ReviewCrad
           reviewImage={cloudOne}
           heading="“A real sense of community, nurtured”"
@@ -123,7 +123,7 @@ const Reviews = () => {
           subtile="Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for .."
           name="Olga"
           location="Weave Studios – Kai Tak"
-        /> */}
+        />
 
         {/* <Grid container spacing={3}>
           <Grid item xs={12} sm={12} md={6} lg={2} xl={2}>
