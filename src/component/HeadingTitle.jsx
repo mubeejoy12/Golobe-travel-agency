@@ -9,6 +9,8 @@ const HeadingTitle = ({ title, subtitle, buttonText }) => {
           height: "70px",
           display: "flex",
           justifyContent: "space-between",
+         
+          
         }}
         direction={"row"}
       >
